@@ -1,16 +1,39 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- -----------------------------This is a Document Structure------------------------------------>
+  <!-- --------------------------This is a Document Structure Tag------------------------------ -->
 <head>
+    <!-- --------------------------This is a Meta Information Tag------------------------------ -->
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Tags">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Raihanie y. Muripaga">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>First Website</title>
+   <!-- --------------------------This is Box Model------------------------------ -->
+  <style>
+    .myDiv {
+    border: 2px outset black;
+    background-color: skyblue;
+    text-align: center;
+    }
+    </style>
 </head>
 <body>
 
     <h2>Raihanie Yusoph Muripaga</h2>
-
-    <!-- ---------------------------This is a Text Formatting-------------------------------- -->
+    <!-- --------------------------This is a Text Formatting Tag------------------------------ -->
     <p><em>2ND YEAR</em> and <em>BSIT</em></p>
+
+    <!-- --------------------------This is a SelectBox------------------------------ -->
+    <label for="gender">Gender</label>
+    <select name="gender" id="gender">
+      <option value="m">Male</option>
+      <option value="f">Female</option>
+      <option value="na">Prefer not to answer</option>
+    </select>
     <!-- -----------------------------This is a List Tag--------------------------------- -->
     <p>List are my Favorite Color </p>
     <ol>
@@ -18,10 +41,106 @@
         <li>Sage Green</li>
         <li>Khaki</li>
     </ol>
-    <p>Here is a link to more <a href="https://muripagss.github.io/portfolio/">Information</a>.</p>
 
-    <h1>My Image</h1>
-    <img src="path/to/your/image.jpg" alt="Description of the image">
+    <!-- --------------------------This is a CheckBox------------------------------ -->
+    <h3>What is on your most needed in life?</h3>
+    <h5>check as may as you achieve</h5>
+    <input type="checkbox" id="bl" name="bl1" value="Money">
+    <label for="vehicle1"> Money</label><br>
+    <input type="checkbox" id="bl2" name="bl2" value="Family">
+    <label for="vehicle2"> Family</label><br>
+    <input type="checkbox" id="bl3" name="bl3" value="Cellphone">
+    <label for="vehicle3"> Cellphone</label><br>
+    <input type="checkbox" id="bl4" name="bl4" value="House">
+    <label for="vehicle3"> House</label><br>
+    <input type="checkbox" id="bl5" name="bl5" value="Car">
+    <label for="vehicle3"> Car</label><br><br>
+
+
+    <!-- --------------------------This is a Links Tag------------------------------ -->  
+    <p>Here is a link to more <a href="https://muripagss.github.io/portfolio/">Information</a>.</p>
     
+    <!-- --------------------------This is a Images Tag------------------------------ -->
+    <h3>My Favorite Pet</h3>
+    <img src="pet.jpg" width="500" height="400">
+
+    <!-- --------------------------This is a Video------------------------------ -->
+    <h3>My Favorite Man</h3>
+
+    <video width="400" height="500" controls>
+    <source src="Download.mp4" type="video/mp4">
+    <source src="Download.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+    <!-- --------------------------This is a Audio------------------------------ -->
+    <h3>My Favorite Music</h3>
+    <p>Fireflies - Owl City</p>
+    <audio controls>
+      <source src="Fireflies - Owl City.m4a" type="audio/ogg">
+      <source src="Fireflies - Owl City.m4a" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <!-- --------------------------This is a Table Tag------------------------------ -->
+    <h3>Class Schedules</h3>
+    <table border="1 ">
+        <tr>
+          <th>Subjects</th>
+          <th>Schedule</th>
+        </tr>
+        <tr>
+          <td>Web System and Technology</td>
+          <td>7:30am - 10:30am</td>
+        </tr>
+        <tr>
+            <td>SIA</td>
+            <td>10:30am - 1:30pm</td>
+        </tr>
+        <tr>
+            <td>Discrete Math</td>
+            <td>7:30 to 10:30pm</td>
+        </tr>
+    </table>
+
+    
+    
+
+    <h3>Comment Here!</h3>
+    <!-- --------------------------This is a Forms Tag------------------------------ -->
+    <form action="/action_page.php" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="lname">Contact Info:</label>
+        <input type="text" id="cname" name="cname"><br><br>
+        <label for="lname">Message:</label>
+        <input type="text" id="msg" name="msg", placeholder="Write something.." style="height:60px"><br><br>
+        
+        <!-- --------------------------This is a Radio Button------------------------------ -->
+        <h3>Rate this Website</h3>
+        <input type="radio" id="rate1" name="rate" value="5">
+        <label for="rate1"> 5 star</label><br>
+        <input type="radio" id="rate2" name="rate" value="4">
+        <label for="rate2">4 star</label><br>  
+        <input type="radio" id="rate3" name="rate" value="3">
+        <label for="rate3">3 star</label><br>
+        <input type="radio" id="rate2" name="rate" value="2">
+        <label for="rate2">2 star</label><br>
+        <input type="radio" id="rate1" name="rate" value="1">
+        <label for="rate1">1 star</label><br><br>
+
+        <!-- --------------------------This is Interactive Element------------------------------ -->
+        <button type="button" style="height:30px; width:70px">Submit!</button>
+        <p></p>
+    </form>
+
+    <!-- --------------------------This is a Semantic Element------------------------------ -->
+    <div class="myDiv">
+      <p>© 2024 My First Website. All Rights Reserved.</p>
+    </div>
+
+    
+    
+
+
 </body>
 </html>
